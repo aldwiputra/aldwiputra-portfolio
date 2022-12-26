@@ -1,0 +1,88 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	--color-black: rgba(1, 1, 1, 1);
+
+	--color-grey-800: rgba(35, 35, 35, 1);
+	--color-grey-600: rgba(51, 51, 51, 1); /* background */
+	--color-grey-400: rgba(62, 61, 61, 1); /* card background */
+	--color-grey-200: rgba(97, 97, 97, 1);
+	--color-grey-subtext: rgba(138, 139, 141, 1);
+
+	--color-off-white: rgba(226, 232, 240, 1);
+	--color-white: rgba(255, 255, 255, 1);
+
+	--color-orange: rgba(235, 91, 68, 1);
+	--color-green: rgba(75, 209, 53, 1);
+
+	--color-black-github: rgba(41, 41, 39, 1);
+	--color-blue-linkedin: rgba(19, 110, 150, 1);
+	--color-red-email: rgba(187, 49, 49, 1);
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol[role='list'] {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	background-color: var(--color-grey-600);
+	color: var(--color-off-white);
+	font-family: 'Sora', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
