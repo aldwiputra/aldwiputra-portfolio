@@ -1,15 +1,18 @@
-<header>
-	<a class="logo-container" href="/">
-		<img class="logo-image" src="/logo-aldi.svg" alt="Logo Aldwiputra" />
+<header class="flex" data-justi-align="sb-center">
+	<a class="logo-container block" href="/">
+		<picture>
+			<source srcset="/logo-aldi.svg" media="(min-width: 60rem)" />
+			<img class="logo-image" src="/logo-aldi-small.svg" alt="Logo Aldwiputra" />
+		</picture>
 	</a>
 
-	<div class="open-to-work-container" aria-hidden="true">
+	<div class="open-to-work-container" data-justi-align="sb-center" aria-hidden="true">
 		<span class="green-light" />
 		<p>open to work</p>
 	</div>
 
 	<nav>
-		<ul>
+		<ul class="flex">
 			<li><a href="#projects">projects</a></li>
 			<li><a href="#contact">contact</a></li>
 			<li>
@@ -36,29 +39,21 @@
 
 <style>
 	header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		height: 4.5rem;
 	}
 
-	span {
-		display: block;
-	}
-
 	.logo-container {
-		width: 8vw;
+		height: 2rem;
 	}
 
-	.logo-image {
-		width: 100%;
+	picture,
+	img {
+		height: 100%;
 	}
 
 	.open-to-work-container {
 		padding: 0.375rem 1.5rem;
 		display: none;
-		justify-content: center;
-		align-items: center;
 		border-radius: 1.5rem;
 		border: 1px solid rgba(var(--rgb-off-white));
 	}
@@ -66,13 +61,14 @@
 	.open-to-work-container p {
 		font-size: 0.75rem;
 		font-weight: 300;
-		margin-left: 0.75rem;
+		margin-left: 1rem;
 		transform: translateY(-8%);
 	}
 
 	.green-light {
 		--opacity: 0.7;
 
+		display: block;
 		width: 0.5rem;
 		height: 0.5rem;
 		background-color: rgba(var(--rgb-green));
@@ -85,14 +81,9 @@
 	}
 
 	nav ul {
-		display: flex;
 		text-transform: uppercase;
 		font-size: 0.875rem;
 		font-weight: 400;
-	}
-
-	nav li:not(:last-child) {
-		margin-right: 3rem;
 	}
 
 	svg {
