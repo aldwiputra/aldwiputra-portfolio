@@ -60,6 +60,7 @@
 	.open-to-work-container {
 		padding: 0.375rem 1.5rem;
 		display: none;
+		margin-left: 10rem;
 		border-radius: 1.5rem;
 		border: 1px solid rgba(var(--rgb-off-white));
 	}
