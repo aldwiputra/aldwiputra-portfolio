@@ -5,6 +5,6 @@
 <style>
 	main {
 		width: clamp(20rem, 90%, 1400px);
-		margin: 0 auto;
+		margin-inline: auto;
 	}
 </style>

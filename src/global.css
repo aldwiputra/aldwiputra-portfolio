@@ -70,7 +70,7 @@ body {
 	line-height: 1.5;
 	background-color: rgba(var(--rgb-grey-600), var(--opacity));
 	color: rgba(var(--rgb-off-white), var(--opacity, 1));
-	font-family: 'Atkinson Hypereligible', sans-serif;
+	font-family: 'Sora', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */

@@ -1,3 +1,7 @@
+<script>
+	import Greeting from './Greeting.svelte';
+</script>
+
 <header class="flex" data-justi-align="sb-center">
 	<a class="logo-container block" href="/">
 		<picture>
@@ -35,6 +39,8 @@
 			</li>
 		</ul>
 	</nav>
+
+	<Greeting />
 </header>
 
 <style>
@@ -43,7 +49,7 @@
 	}
 
 	.logo-container {
-		height: 2rem;
+		height: 1.75rem;
 	}
 
 	picture,
@@ -81,14 +87,15 @@
 	}
 
 	nav ul {
-		text-transform: uppercase;
+		text-transform: capitalize;
 		font-size: 0.875rem;
 		font-weight: 400;
 	}
 
 	svg {
-		transform: scale(0.9) translateY(10%);
-		margin-left: 0.125rem;
+		width: 0.7em;
+		transform: translateY(10%);
+		margin-left: 0.2rem;
 	}
 
 	@media screen and (min-width: 60rem) {
@@ -98,6 +105,10 @@
 
 		nav {
 			display: block;
+		}
+
+		.logo-container {
+			height: 2rem;
 		}
 	}
 </style>
