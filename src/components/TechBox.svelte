@@ -13,8 +13,8 @@
 		display: grid;
 		place-items: center;
 		border-radius: 0.5rem;
-		width: 3.5rem;
-		height: 3.5rem;
+		width: clamp(4rem, 10vw, 6rem);
+		height: clamp(4rem, 10vw, 6rem);
 	}
 
 	div:last-child {
@@ -22,19 +22,10 @@
 	}
 
 	img {
-		height: 1.5rem;
+		height: clamp(2rem, 5vw, 3rem);
 	}
 
 	@media screen and (min-width: 60rem) {
-		div {
-			width: 6rem;
-			height: 6rem;
-		}
-
-		img {
-			height: 3rem;
-		}
-
 		div:last-child {
 			display: grid;
 		}
