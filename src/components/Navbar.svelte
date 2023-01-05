@@ -111,5 +111,13 @@
 		.logo-container {
 			height: 2rem;
 		}
+
+		li {
+			transition: transform ease-out 100ms;
+		}
+
+		li:hover {
+			transform: scale(0.9);
+		}
 	}
 </style>

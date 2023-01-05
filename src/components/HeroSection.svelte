@@ -25,6 +25,7 @@
 		width: 100%;
 		z-index: 1;
 		position: relative;
+		overflow: hidden;
 		padding-block: 12rem;
 	}
 
@@ -55,7 +56,7 @@
 
 	h1 {
 		position: relative;
-		font-size: clamp(4.5rem, 8vw, 6rem);
+		font-size: clamp(4rem, 7vw, 6rem);
 		line-height: 1.1;
 	}
 
