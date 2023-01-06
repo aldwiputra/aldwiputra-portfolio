@@ -13,8 +13,8 @@
 		display: grid;
 		place-items: center;
 		border-radius: 0.5rem;
-		width: clamp(4rem, 10vw, 6rem);
-		height: clamp(4rem, 10vw, 6rem);
+		width: clamp(3.5rem, 10vw, 6rem);
+		height: clamp(3.5rem, 10vw, 6rem);
 	}
 
 	div:last-child {

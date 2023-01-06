@@ -32,10 +32,14 @@
 <style>
 	.project-container {
 		position: relative;
-		margin-block-start: 2.5rem;
 		padding-block: 2rem;
-		border-block: 2px solid rgba(var(--rgb-grey-subtext));
+		border-bottom: 1px solid rgba(var(--rgb-grey-400));
 		cursor: pointer;
+	}
+
+	.project-container:first-child {
+		border-top: 1px solid rgba(var(--rgb-grey-400));
+		margin-top: 2.5rem;
 	}
 
 	.project-container:hover h3 {
@@ -62,6 +66,8 @@
 	}
 
 	.gallery-container {
+		margin-block-start: 1rem;
+		margin-block-end: 1rem;
 		gap: 1rem;
 		align-items: flex-start;
 	}
@@ -78,12 +84,12 @@
 		flex-direction: column;
 		gap: 1rem;
 		width: 10rem;
-		min-width: 4rem;
+		min-width: 3rem;
 	}
 
 	.img-container {
 		border-radius: 0.5rem;
-		padding: 1rem;
+		padding: 0.75rem;
 		background-color: rgba(var(--rgb-grey-400));
 	}
 
@@ -102,14 +108,16 @@
 			right: 5%;
 			z-index: 1;
 			position: absolute;
-			max-width: 35rem;
-			transform: translateY(-30%);
 			pointer-events: none;
-			width: fit-content;
+			width: clamp(30rem, 35vw, 40rem);
 			opacity: 0;
 			transform: scale(0.5) translateY(-30%);
 			transition: all 100ms cubic-bezier(0.23, 1, 0.32, 1);
 			transform-origin: top right;
+		}
+
+		.gallery-container > * {
+			flex-grow: 1;
 		}
 	}
 </style>

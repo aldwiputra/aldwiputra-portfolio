@@ -3,22 +3,28 @@
 	import TabButton from './TabButton.svelte';
 </script>
 
-<section>
+<section id="projects">
 	<h2>Projects <span>.</span></h2>
 	<div class="tab-buttons-container flex">
 		<TabButton path="all-icon.svg" text="All" />
 		<TabButton path="webdev-icon.svg" text="Web" />
 		<TabButton path="mobile-icon.svg" text="Mobile" />
 	</div>
-	<Project
-		title="Expenditura"
-		imgPaths={['/expenditura-onboard.webp', '/expenditura-home.webp', '/expenditura-dialog.webp']}
-	/>
+	<div class="projects-container">
+		<Project
+			title="Expenditura"
+			imgPaths={['/expenditura-onboard.webp', '/expenditura-home.webp', '/expenditura-dialog.webp']}
+		/>
+		<Project
+			title="Watchflix"
+			imgPaths={['/watchflix-home.webp', '/watchflix-detail.webp', '/watchflix-chat.webp']}
+		/>
+	</div>
 </section>
 
 <style>
 	section {
-		margin-block: 5rem;
+		margin-block: 10rem;
 	}
 
 	h2 {

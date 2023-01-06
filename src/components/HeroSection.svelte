@@ -4,7 +4,7 @@
 
 <section>
 	<div class="section-container">
-		<h1>I am a <br /> <span class="fullstack">fullstack <br /></span> shaman</h1>
+		<h1>I am a <br /> <span class="fullstack">fullstack <br /></span> developer</h1>
 		<div class="subtext-container shadow">
 			<p>specialized in sprinkling magic onto the <span>www.</span></p>
 		</div>
@@ -45,18 +45,12 @@
 		transform: rotate(45deg);
 
 		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 75%);
-		/* -webkit-mask-size: 100%;
-		-webkit-mask-repeat: no-repeat;
-		-webkit-mask-position: center; */
 		mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 75%);
-		/* mask-size: 100%;
-		mask-repeat: no-repeat;
-		mask-position: center; */
 	}
 
 	h1 {
 		position: relative;
-		font-size: clamp(4rem, 7vw, 6rem);
+		font-size: clamp(3.5rem, 7vw, 6rem);
 		line-height: 1.1;
 	}
 
