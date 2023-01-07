@@ -98,11 +98,6 @@
 	}
 
 	@media screen and (min-width: 60rem) {
-		.project-container:hover .gallery-container {
-			opacity: 1;
-			transform: scale(1) translateY(-30%);
-		}
-
 		.gallery-container {
 			top: 0;
 			right: 5%;
@@ -114,6 +109,12 @@
 			transform: scale(0.5) translateY(-30%);
 			transition: all 100ms cubic-bezier(0.23, 1, 0.32, 1);
 			transform-origin: top right;
+			will-change: transform;
+		}
+
+		.project-container:hover .gallery-container {
+			opacity: 1;
+			transform: scale(1) translateY(-30%);
 		}
 
 		.gallery-container > * {

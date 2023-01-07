@@ -113,7 +113,9 @@
 		}
 
 		li {
-			transition: transform ease-out 100ms;
+			transform-origin: center;
+			transition: transform linear 50ms;
+			will-change: transform;
 		}
 
 		li:hover {
