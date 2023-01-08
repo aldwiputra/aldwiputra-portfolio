@@ -1,6 +1,7 @@
 <script lang="ts">
 	export let title: string;
 	export let imgPaths: string[];
+	export let techImgPaths: string[];
 
 	function turnPathIntoAltText(path: string) {
 		return path.replace('-', ' ').slice(0, -4);
@@ -17,13 +18,13 @@
 		</div>
 		<div class="tech-stack-container flex">
 			<div class="img-container shadow">
-				<img src="/react-icon.svg" alt="" />
+				<img src={techImgPaths[0]} alt="" />
 			</div>
 			<div class="img-container shadow">
-				<img src="/typescript-icon.svg" alt="" />
+				<img src={techImgPaths[1]} alt="" />
 			</div>
 			<div class="img-container shadow">
-				<img src="/nodejs-icon.svg" alt="" />
+				<img src={techImgPaths[2]} alt="" />
 			</div>
 		</div>
 	</div>
@@ -39,7 +40,7 @@
 
 	.project-container:first-child {
 		border-top: 1px solid rgba(var(--rgb-grey-400));
-		margin-top: 2.5rem;
+		margin-top: 1rem;
 	}
 
 	.project-container:hover h3 {
@@ -83,7 +84,7 @@
 	.tech-stack-container {
 		flex-direction: column;
 		gap: 1rem;
-		width: 10rem;
+		width: clamp(3rem, 25vw, 12rem);
 		min-width: 3rem;
 	}
 
@@ -97,7 +98,17 @@
 		width: 100%;
 	}
 
+	@media screen and (min-width: 45rem) {
+		.img-container {
+			padding: 1.25rem;
+		}
+	}
+
 	@media screen and (min-width: 60rem) {
+		.project-container:first-child {
+			margin-top: 2.5rem;
+		}
+
 		.project-container:hover .gallery-container {
 			opacity: 1;
 			transform: scale(1) translateY(-30%);
@@ -109,7 +120,7 @@
 			z-index: 1;
 			position: absolute;
 			pointer-events: none;
-			width: clamp(30rem, 35vw, 40rem);
+			width: clamp(30rem, 35vw, 35rem);
 			opacity: 0;
 			transform: scale(0.5) translateY(-30%);
 			transition: all 100ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -118,6 +129,10 @@
 
 		.gallery-container > * {
 			flex-grow: 1;
+		}
+
+		.img-container {
+			padding: 1rem;
 		}
 	}
 </style>

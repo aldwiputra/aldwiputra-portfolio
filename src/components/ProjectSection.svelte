@@ -14,10 +14,12 @@
 		<Project
 			title="Expenditura"
 			imgPaths={['/expenditura-onboard.webp', '/expenditura-home.webp', '/expenditura-dialog.webp']}
+			techImgPaths={['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg']}
 		/>
 		<Project
 			title="Watchflix"
 			imgPaths={['/watchflix-home.webp', '/watchflix-detail.webp', '/watchflix-chat.webp']}
+			techImgPaths={['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg']}
 		/>
 	</div>
 </section>
