@@ -19,7 +19,12 @@
 		<Project
 			title="Watchflix"
 			imgPaths={['/watchflix-home.webp', '/watchflix-detail.webp', '/watchflix-chat.webp']}
-			techImgPaths={['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg']}
+			techImgPaths={['/android-icon.svg', '/kotlin-icon.svg', '/firebase-colored.svg']}
+		/>
+		<Project
+			title="RPS Game"
+			imgPaths={['/rps-splash.webp', '/rps-home.webp', '/rps-option.webp']}
+			techImgPaths={['/android-icon.svg', '/kotlin-icon.svg', '/db-icon.svg']}
 		/>
 	</div>
 </section>
