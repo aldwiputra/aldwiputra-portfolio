@@ -133,7 +133,7 @@
 		}
 
 		.img-container {
-			padding: 0.85rem;
+			padding: 0.95rem;
 		}
 	}
 </style>
