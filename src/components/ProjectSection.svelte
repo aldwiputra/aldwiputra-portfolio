@@ -31,7 +31,8 @@
 
 <style>
 	section {
-		margin-block: 10rem;
+		margin-block-start: 10rem;
+		margin-block-end: 7rem;
 	}
 
 	h2 {
@@ -50,6 +51,10 @@
 	}
 
 	@media screen and (min-width: 60rem) {
+		section {
+			margin-block-start: 7rem;
+		}
+
 		.tab-buttons-container {
 			display: flex;
 		}

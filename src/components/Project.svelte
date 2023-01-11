@@ -1,4 +1,6 @@
 <script lang="ts">
+	import TechBox from './TechBox.svelte';
+
 	export let title: string;
 	export let imgPaths: string[];
 	export let techImgPaths: string[];
