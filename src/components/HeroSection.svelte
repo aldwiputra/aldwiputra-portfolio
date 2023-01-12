@@ -23,7 +23,7 @@
 <style>
 	section {
 		width: 100%;
-		z-index: 1;
+		/* z-index: 1; */
 		position: relative;
 		overflow: hidden;
 		padding-block: 12rem;
