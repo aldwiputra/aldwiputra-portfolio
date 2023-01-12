@@ -33,10 +33,10 @@
 	</div>
 	<div class="footer flex">
 		<p>Copyright 2022 Ⓒ aldwiputra</p>
-		<div on:click={backToTopHandler} class="back-to-top flex">
+		<button on:click={backToTopHandler} class="back-to-top flex">
 			<img src="/arrow-up.svg" alt="arrow top" />
 			<p>Back to Top</p>
-		</div>
+		</button>
 	</div>
 </section>
 
@@ -107,5 +107,15 @@
 
 	.back-to-top > img {
 		height: 1rem;
+	}
+
+	button {
+		background-color: transparent;
+		border: none;
+		color: rgba(var(--rgb-off-white));
+	}
+
+	button:hover {
+		color: rgba(var(--rgb-white));
 	}
 </style>
