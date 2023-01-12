@@ -79,7 +79,7 @@
 
 	.cards-wrapper {
 		gap: 3rem;
-		margin-block-start: 3rem;
+		margin-block-start: 2.5rem;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -91,7 +91,7 @@
 		width: 100%;
 		margin-block-start: 4rem;
 		font-family: 'Atkinson Hyperlegible', sans-serif;
-		font-size: 1rem;
+		font-size: clamp(0.75rem, 3vw, 1rem);
 	}
 
 	.back-to-top {
