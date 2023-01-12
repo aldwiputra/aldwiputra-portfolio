@@ -71,6 +71,7 @@ body {
 	background-color: rgba(var(--rgb-grey-600), var(--opacity));
 	color: rgba(var(--rgb-off-white), var(--opacity, 1));
 	font-family: 'Sora', sans-serif;
+	overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */

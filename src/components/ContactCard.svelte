@@ -2,19 +2,28 @@
 	export let title: string;
 	export let name: string;
 	export let link: string;
+	export let icon: string;
+
+	$: backgroundColor =
+		title === 'Github'
+			? 'rgba(var(--rgb-black-github))'
+			: title === 'LinkedIn'
+			? 'rgba(var(--rgb-blue-linkedin))'
+			: 'rgba(var(--rgb-red-email))';
 </script>
 
-<div class="card-container">
-	<div class="icon-wrapper">
-		<img src="" alt="" />
+<div class="card-container shadow">
+	<div class="icon-wrapper" style={`background-color: ${backgroundColor}`}>
+		<img src={icon} alt="icon" />
 	</div>
 
-	<p class="title" />
-	<p class="name" />
+	<p class="title">{title}</p>
+	<div class="line-separator" />
+	<p class="name">{name}</p>
 
 	<div class="link-box">
-		<a href={link}>
-			<p>{link}</p>
+		<a class="flex" href={link}>
+			<p class="link">{link}</p>
 			<svg
 				width="20"
 				height="20"
@@ -34,3 +43,67 @@
 		</a>
 	</div>
 </div>
+
+<style>
+	.card-container {
+		background-color: rgba(var(--rgb-grey-400));
+		border-radius: 1rem;
+		padding: 1.5rem;
+		min-width: 19rem;
+		overflow: hidden;
+	}
+
+	.icon-wrapper {
+		border-radius: 0.5rem;
+		padding-block: 2rem;
+	}
+
+	img {
+		max-width: 5rem;
+		margin-inline: auto;
+	}
+
+	.title {
+		margin-block-start: 1.5rem;
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.name {
+		font-size: 0.875rem;
+		margin-block-start: 0.75rem;
+	}
+
+	.link {
+		font-size: 0.75rem;
+		max-width: 22ch;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	a {
+		justify-content: space-between;
+		align-items: center;
+		margin-block-start: 0.75rem;
+		background-color: rgba(var(--rgb-grey-200));
+		border-radius: 0.25rem;
+		padding: 0.375rem 0.75rem;
+	}
+
+	svg {
+		width: 0.75rem;
+	}
+
+	.line-separator {
+		height: 1px;
+		background-color: rgba(var(--rgb-grey-200), 0.4);
+		transform: scaleX(1.5);
+		margin-block-start: 0.75rem;
+	}
+
+	.name,
+	.link-box {
+		font-family: 'Atkinson Hyperlegible', sans-serif;
+	}
+</style>
