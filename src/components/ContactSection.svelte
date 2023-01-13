@@ -6,7 +6,7 @@
 	}
 </script>
 
-<section>
+<section id="contact">
 	<div class="subtitle-container">
 		<p>contact information</p>
 	</div>

@@ -13,19 +13,19 @@
 <div class="project-container">
 	<h3>{title}</h3>
 	<div class="gallery-container flex">
-		<div class="galleries shadow flex">
+		<div class="galleries shadow flex texturize">
 			<img src={imgPaths[0]} alt={turnPathIntoAltText(imgPaths[0])} />
 			<img src={imgPaths[1]} alt={turnPathIntoAltText(imgPaths[1])} />
 			<img src={imgPaths[2]} alt={turnPathIntoAltText(imgPaths[2])} />
 		</div>
 		<div class="tech-stack-container flex">
-			<div class="img-container shadow">
+			<div class="img-container shadow texturize">
 				<img src={techImgPaths[0]} alt="" />
 			</div>
-			<div class="img-container shadow">
+			<div class="img-container shadow texturize">
 				<img src={techImgPaths[1]} alt="" />
 			</div>
-			<div class="img-container shadow">
+			<div class="img-container shadow texturize">
 				<img src={techImgPaths[2]} alt="" />
 			</div>
 		</div>
@@ -81,6 +81,7 @@
 		justify-content: center;
 		align-items: center;
 		background-color: rgba(var(--rgb-grey-400));
+		overflow: hidden;
 	}
 
 	.tech-stack-container {
@@ -94,6 +95,7 @@
 		border-radius: 0.5rem;
 		padding: 0.75rem;
 		background-color: rgba(var(--rgb-grey-400));
+		overflow: hidden;
 	}
 
 	.img-container img {
@@ -119,7 +121,7 @@
 		.gallery-container {
 			top: 0;
 			right: 5%;
-			z-index: 1;
+			z-index: 1000;
 			position: absolute;
 			pointer-events: none;
 			width: clamp(30rem, 35vw, 35rem);
