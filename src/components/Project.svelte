@@ -87,8 +87,8 @@
 	.tech-stack-container {
 		flex-direction: column;
 		gap: 1rem;
-		width: clamp(3rem, 25vw, 12rem);
-		min-width: 3rem;
+		width: clamp(3rem, 40vw, 12rem);
+		min-width: 2.5rem;
 	}
 
 	.img-container {

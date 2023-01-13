@@ -26,7 +26,7 @@
 		/* z-index: 1; */
 		position: relative;
 		overflow: hidden;
-		padding-block: 12rem;
+		padding-block: 6rem;
 	}
 
 	section::before {
@@ -50,8 +50,8 @@
 
 	h1 {
 		position: relative;
-		font-size: clamp(3.5rem, 7vw, 6rem);
-		line-height: 1.1;
+		font-size: clamp(3rem, 7vw, 5.375rem);
+		line-height: 1.05;
 	}
 
 	.section-container {
@@ -105,7 +105,7 @@
 
 		.techbox-container {
 			margin-top: 3rem;
-			gap: 2.5rem;
+			gap: 2.25rem;
 		}
 
 		.subtext-container {

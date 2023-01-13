@@ -4,7 +4,7 @@
 
 <style>
 	main {
-		width: clamp(20rem, 90%, 1400px);
+		width: clamp(18.75rem, 90%, 1400px);
 		margin-inline: auto;
 	}
 </style>
