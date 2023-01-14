@@ -22,7 +22,7 @@
 	<p class="name">{name}</p>
 
 	<div class="link-box">
-		<a class="flex" href={link}>
+		<a class="flex" target="_blank" rel="noreferrer" href={link}>
 			<p class="link">{link}</p>
 			<svg
 				width="20"
@@ -105,5 +105,15 @@
 	.name,
 	.link-box {
 		font-family: 'Atkinson Hyperlegible', sans-serif;
+		will-change: transform;
+		transition: transform 50ms linear;
+	}
+
+	.link-box:hover {
+		transform: scale(1.05);
+	}
+
+	.link-box:hover .link {
+		text-decoration: underline;
 	}
 </style>

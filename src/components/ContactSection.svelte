@@ -91,7 +91,7 @@
 		width: 100%;
 		margin-block-start: 4rem;
 		font-family: 'Atkinson Hyperlegible', sans-serif;
-		font-size: clamp(0.75rem, 3vw, 1rem);
+		font-size: clamp(0.725rem, 3vw, 1rem);
 	}
 
 	.back-to-top {
