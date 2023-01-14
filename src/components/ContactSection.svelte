@@ -74,6 +74,7 @@
 
 	h2 {
 		font-size: clamp(2rem, 5vw, 3rem);
+		line-height: 1;
 		margin-block-start: 1.5rem;
 	}
 
