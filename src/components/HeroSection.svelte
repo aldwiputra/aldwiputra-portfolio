@@ -24,9 +24,6 @@
 
 <style>
 	section {
-		--zero-percent: 150%;
-		--fifty-percent: 75%;
-
 		width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -48,12 +45,13 @@
 
 		transform: rotate(45deg);
 
-		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 75%);
-		mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 75%);
+		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 80%);
+		mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 80%);
 		clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
 		animation-name: clip-path-animation;
-		animation-duration: 5000ms;
-		animation-delay: 500ms;
+		animation-duration: 2000ms;
+		animation-delay: 400ms;
+		animation-timing-function: ease-in;
 		animation-fill-mode: forwards;
 	}
 
@@ -114,6 +112,9 @@
 	}
 
 	@keyframes clip-path-animation {
+		35% {
+			clip-path: polygon(60% 0, 40% 0, 40% 100%, 60% 100%);
+		}
 		100% {
 			clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 		}

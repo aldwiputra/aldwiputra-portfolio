@@ -90,7 +90,7 @@
 
 	.footer {
 		padding-block: 1.5rem;
-		border-top: 1px solid rgba(var(--rgb-grey-200), 0.4);
+		border-top: 1px solid var(--color-purple-500);
 		justify-content: space-between;
 		width: 100%;
 		margin-block-start: 4rem;

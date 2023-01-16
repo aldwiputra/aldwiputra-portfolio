@@ -47,7 +47,7 @@
 	header {
 		height: 4.5rem;
 		opacity: 0;
-		/* transform: translate3d(0, -100%, 0); */
+		margin-block: 0.75rem;
 		animation-name: opacity;
 		animation-duration: 500ms;
 		animation-delay: 500ms;
@@ -87,7 +87,7 @@
 		box-shadow: 0 0 0.6rem 0.1rem rgba(22, 163, 74, 0.7);
 		transform: scale(0.75);
 		animation-name: beating;
-		animation-duration: 1000ms;
+		animation-duration: 1500ms;
 		animation-fill-mode: forwards;
 		animation-iteration-count: infinite;
 		animation-timing-function: ease-in;

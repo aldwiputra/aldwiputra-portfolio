@@ -18,12 +18,12 @@
 		width: clamp(3rem, 14vw, 5.5rem);
 		height: clamp(3rem, 14vw, 5.5rem);
 		will-change: transform opacity;
+		transition: transform 200ms linear;
 		opacity: 0;
 		animation-name: flyin;
 		animation-duration: 200ms;
 		animation-fill-mode: forwards;
 		animation-timing-function: ease-in;
-		/* animation-delay: calc(var(--key) * 50); */
 	}
 
 	div:last-child {
@@ -56,6 +56,10 @@
 	}
 
 	@media screen and (min-width: 60rem) {
+		div:hover {
+			transform: translateY(-10%);
+		}
+
 		div:last-child {
 			display: grid;
 		}
