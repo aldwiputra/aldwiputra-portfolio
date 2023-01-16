@@ -2,7 +2,9 @@
 	import ContactCard from './ContactCard.svelte';
 
 	function backToTopHandler() {
-		document.body.scrollIntoView();
+		document.body.scrollIntoView({
+			behavior: 'smooth'
+		});
 	}
 </script>
 
@@ -67,6 +69,7 @@
 		padding: 0.75rem 1.5rem;
 		border-radius: 0.5rem;
 		border: 1px solid black;
+		font-family: 'Atkinson Hyperlegible', sans-serif;
 		box-shadow: inset 0 1px 1px rgb(255 255 255 / 10%);
 		margin-inline: auto;
 		margin-block-start: 3rem;
@@ -92,7 +95,7 @@
 		width: 100%;
 		margin-block-start: 4rem;
 		font-family: 'Atkinson Hyperlegible', sans-serif;
-		font-size: clamp(0.725rem, 3vw, 1rem);
+		font-size: clamp(0.725rem, 3vw, 0.875rem);
 	}
 
 	.back-to-top {

@@ -4,18 +4,20 @@
 
 <section>
 	<div class="section-container">
-		<h1>I am a <br /> <span class="fullstack">fullstack <br /></span> developer</h1>
+		<h1>
+			I am a <br /> <span class="fullstack">fullstack <br /></span> developer
+		</h1>
 		<div class="subtext-container shadow">
 			<p>specialized in sprinkling magic onto the <span>www.</span></p>
 		</div>
 
 		<div class="techbox-container flex">
-			<TechBox path="react-icon.svg" />
-			<TechBox path="firestore-icon.svg" />
-			<TechBox path="nodejs-icon.svg" />
-			<TechBox path="svelte-icon.svg" />
-			<TechBox path="typescript-icon.svg" />
-			<TechBox path="db-icon.svg" />
+			<TechBox key={0} path="react-icon.svg" />
+			<TechBox key={1} path="firestore-icon.svg" />
+			<TechBox key={2} path="nodejs-icon.svg" />
+			<TechBox key={3} path="svelte-icon.svg" />
+			<TechBox key={4} path="typescript-icon.svg" />
+			<TechBox key={5} path="db-icon.svg" />
 		</div>
 	</div>
 </section>
@@ -23,7 +25,6 @@
 <style>
 	section {
 		width: 100%;
-		/* z-index: 1; */
 		position: relative;
 		overflow: hidden;
 		padding-block: 6rem;
@@ -52,6 +53,11 @@
 		position: relative;
 		font-size: clamp(3rem, 7vw, 5.375rem);
 		line-height: 1.05;
+		opacity: 0;
+		animation-name: opacity;
+		animation-duration: 1000ms;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in;
 	}
 
 	.section-container {
@@ -79,6 +85,11 @@
 		width: 23ch;
 		line-height: 1.3;
 		margin-inline: auto;
+		opacity: 0;
+		animation-name: flyin;
+		animation-duration: 200ms;
+		animation-fill-mode: forwards;
+		animation-timing-function: ease-in;
 	}
 
 	.subtext-container span {
