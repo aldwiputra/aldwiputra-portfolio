@@ -12,12 +12,12 @@
 		</div>
 
 		<div class="techbox-container flex">
-			<TechBox key={0} path="react-icon.svg" />
-			<TechBox key={1} path="firestore-icon.svg" />
-			<TechBox key={2} path="nodejs-icon.svg" />
-			<TechBox key={3} path="svelte-icon.svg" />
-			<TechBox key={4} path="typescript-icon.svg" />
-			<TechBox key={5} path="db-icon.svg" />
+			<TechBox path="react-icon.svg" />
+			<TechBox path="firestore-icon.svg" />
+			<TechBox path="nodejs-icon.svg" />
+			<TechBox path="svelte-icon.svg" />
+			<TechBox path="typescript-icon.svg" />
+			<TechBox path="db-icon.svg" />
 		</div>
 	</div>
 </section>

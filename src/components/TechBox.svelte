@@ -1,11 +1,10 @@
 <script lang="ts">
 	export let path: string;
-	export let key: number;
 
 	$: altText = path.replace('-', ' ').slice(0, -4);
 </script>
 
-<div style={`--key: ${key}`} class="shadow">
+<div class="shadow">
 	<img src={path} alt={altText} />
 </div>
 
@@ -18,7 +17,6 @@
 		width: clamp(3rem, 14vw, 5.5rem);
 		height: clamp(3rem, 14vw, 5.5rem);
 		will-change: transform opacity;
-		transition: transform 200ms linear;
 		opacity: 0;
 		animation-name: flyin;
 		animation-duration: 200ms;
@@ -56,10 +54,6 @@
 	}
 
 	@media screen and (min-width: 60rem) {
-		div:hover {
-			transform: translateY(-10%);
-		}
-
 		div:last-child {
 			display: grid;
 		}
