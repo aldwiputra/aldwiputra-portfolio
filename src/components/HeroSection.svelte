@@ -24,6 +24,9 @@
 
 <style>
 	section {
+		--zero-percent: 150%;
+		--fifty-percent: 75%;
+
 		width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -47,6 +50,11 @@
 
 		-webkit-mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 75%);
 		mask-image: radial-gradient(rgba(0, 0, 0, 1) 15%, transparent 75%);
+		clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+		animation-name: clip-path-animation;
+		animation-duration: 5000ms;
+		animation-delay: 500ms;
+		animation-fill-mode: forwards;
 	}
 
 	h1 {
@@ -103,6 +111,12 @@
 		margin-top: 2.5rem;
 		margin-inline: auto;
 		width: fit-content;
+	}
+
+	@keyframes clip-path-animation {
+		100% {
+			clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+		}
 	}
 
 	@media screen and (min-width: 60rem) {

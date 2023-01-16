@@ -78,6 +78,7 @@ html {
 
 /* Set core body defaults */
 body {
+	scrollbar-width: thin;
 	position: relative;
 	min-height: 100vh;
 	text-rendering: optimizeSpeed;
