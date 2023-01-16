@@ -61,7 +61,7 @@
 	}
 
 	.fullstack {
-		background: linear-gradient(45deg, rgba(239, 88, 68, 1) 10%, rgba(75, 209, 53, 1) 120%);
+		background: linear-gradient(35deg, var(--color-blue-400) 0%, var(--color-purple-400) 75%);
 		-webkit-text-fill-color: transparent;
 		-moz-text-fill-color: transparent;
 		-webkit-background-clip: text;
@@ -73,8 +73,8 @@
 		font-family: 'Atkinson Hyperlegible', sans-serif;
 		font-size: clamp(1rem, 2.5vw, 1.25rem);
 		padding: 0.5rem 1rem;
-		background-color: rgba(var(--rgb-grey-800));
-		color: rgba(var(--rgb-grey-subtext));
+		background-color: var(--color-purple-800);
+		color: var(--color-purple-subtext);
 		border-radius: 0.5rem;
 		width: 23ch;
 		line-height: 1.3;
@@ -82,7 +82,7 @@
 	}
 
 	.subtext-container span {
-		color: rgba(var(--rgb-orange));
+		color: var(--color-blue-400);
 		font-weight: bold;
 		font-style: italic;
 	}

@@ -36,17 +36,17 @@
 	.project-container {
 		position: relative;
 		padding-block: 2rem;
-		border-bottom: 1px solid rgba(var(--rgb-grey-400));
+		border-bottom: 1px solid var(--color-purple-500);
 		cursor: pointer;
 	}
 
 	.project-container:first-child {
-		border-top: 1px solid rgba(var(--rgb-grey-400));
+		border-top: 1px solid var(--color-purple-500);
 		margin-top: 1rem;
 	}
 
 	.project-container:hover h3 {
-		background: linear-gradient(45deg, rgba(239, 88, 68, 1) 10%, rgba(75, 209, 53, 1) 90%);
+		background: linear-gradient(45deg, var(--color-blue-400) 0%, var(--color-purple-400) 75%);
 		-webkit-text-fill-color: transparent;
 		-moz-text-fill-color: transparent;
 		-webkit-background-clip: text;
@@ -80,7 +80,7 @@
 		padding: 1rem 2rem;
 		justify-content: center;
 		align-items: center;
-		background-color: rgba(var(--rgb-grey-400));
+		background-color: var(--color-purple-600);
 		overflow: hidden;
 	}
 
@@ -94,7 +94,7 @@
 	.img-container {
 		border-radius: 0.5rem;
 		padding: 0.75rem;
-		background-color: rgba(var(--rgb-grey-400));
+		background-color: var(--color-purple-600);
 		overflow: hidden;
 	}
 

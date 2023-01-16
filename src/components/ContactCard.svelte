@@ -6,7 +6,7 @@
 
 	$: backgroundColor =
 		title === 'Github'
-			? 'rgba(var(--rgb-black-github))'
+			? 'var(--color-purple-800'
 			: title === 'LinkedIn'
 			? 'rgba(var(--rgb-blue-linkedin))'
 			: 'rgba(var(--rgb-red-email))';
@@ -46,7 +46,7 @@
 
 <style>
 	.card-container {
-		background-color: rgba(var(--rgb-grey-400));
+		background-color: var(--color-purple-600);
 		border-radius: 1rem;
 		padding: 1.5rem;
 		min-width: 19rem;
@@ -86,7 +86,7 @@
 		justify-content: space-between;
 		align-items: center;
 		margin-block-start: 0.75rem;
-		background-color: rgba(var(--rgb-grey-200));
+		background-color: var(--color-purple-500);
 		border-radius: 0.25rem;
 		padding: 0.375rem 0.75rem;
 	}
@@ -97,7 +97,7 @@
 
 	.line-separator {
 		height: 1px;
-		background-color: rgba(var(--rgb-grey-200), 0.4);
+		background-color: var(--color-purple-500);
 		transform: scaleX(1.5);
 		margin-block-start: 0.75rem;
 	}

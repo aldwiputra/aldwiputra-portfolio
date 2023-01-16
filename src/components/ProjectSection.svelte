@@ -41,7 +41,7 @@
 	}
 
 	span {
-		color: rgba(var(--rgb-orange));
+		color: var(--color-blue-400);
 	}
 
 	.tab-buttons-container {

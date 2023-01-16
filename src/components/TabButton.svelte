@@ -8,15 +8,11 @@
 	class="flex"
 	data-justi-align="sb-center"
 	style={text !== 'All'
-		? 'border: 1px solid rgba(var(--rgb-grey-subtext)); cursor: not-allowed;'
-		: 'border: 1px solid rgba(var(--rgb-off-white)); cursor: not-allowed;'}
+		? 'border: 1px solid var(--color-purple-subtext); color: var(--color-purple-subtext); ; cursor: not-allowed;'
+		: 'border: 1px solid rgba(var(--rgb-off-white));color: rgba(var(--rgb-off-white)); cursor: not-allowed;'}
 >
 	<img src={path} alt={altText} />
-	<p
-		style={text !== 'All'
-			? 'color: rgba(var(--rgb-grey-subtext));  cursor: not-allowed;'
-			: 'color: rgba(var(--rgb-off-white));  cursor: not-allowed;'}
-	>
+	<p>
 		{text}
 	</p>
 </div>

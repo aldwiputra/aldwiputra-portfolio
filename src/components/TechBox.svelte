@@ -9,7 +9,7 @@
 
 <style>
 	div {
-		background-color: rgba(var(--rgb-grey-400));
+		background-color: var(--color-purple-600);
 		display: grid;
 		place-items: center;
 		border-radius: 0.5rem;

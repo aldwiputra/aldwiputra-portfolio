@@ -73,14 +73,12 @@
 	}
 
 	.green-light {
-		--opacity: 0.7;
-
 		display: block;
 		width: 0.5rem;
 		height: 0.5rem;
-		background-color: rgba(var(--rgb-green));
+		background-color: rgba(22, 163, 74);
 		border-radius: 50%;
-		box-shadow: 0 0 0.6rem 0.1rem rgba(var(--rgb-green), var(--opacity));
+		box-shadow: 0 0 0.6rem 0.1rem rgba(22, 163, 74, 0.7);
 	}
 
 	nav {

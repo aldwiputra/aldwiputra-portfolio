@@ -43,7 +43,7 @@
 <style>
 	section {
 		position: relative;
-		background-color: rgba(48, 48, 48, 1);
+		background-color: var(--color-grey-800);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -55,13 +55,13 @@
 		inset: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(48, 48, 48, 1);
+		background-color: var(--color-purple-800);
 		z-index: -1;
 		transform: scaleX(2);
 	}
 
 	.subtitle-container {
-		background-color: rgba(var(--rgb-grey-800));
+		background-color: var(--color-purple-700);
 		width: fit-content;
 		text-transform: uppercase;
 		padding: 0.75rem 1.5rem;
