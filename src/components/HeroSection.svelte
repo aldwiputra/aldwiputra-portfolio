@@ -26,7 +26,7 @@
 	section {
 		width: 100%;
 		position: relative;
-		overflow: hidden;
+		overflow: visible;
 		padding-block: 6rem;
 	}
 
