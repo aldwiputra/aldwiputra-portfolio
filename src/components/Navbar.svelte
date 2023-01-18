@@ -5,7 +5,7 @@
 <header class="flex" data-justi-align="sb-center">
 	<a class="logo-container block" href="/">
 		<picture>
-			<source srcset="/logo-aldi.svg" media="(min-width: 60rem)" />
+			<source height="32px" width="103.117px" srcset="/logo-aldi.svg" media="(min-width: 60rem)" />
 			<img class="logo-image" src="/logo-aldi-small.svg" alt="Logo Aldwiputra" />
 		</picture>
 	</a>
@@ -46,9 +46,9 @@
 <style>
 	header {
 		height: 4.5rem;
-		opacity: 0;
+		opacity: 1;
 		margin-block: 0.75rem;
-		animation-name: opacity;
+		/* animation-name: opacity; */
 		animation-duration: 500ms;
 		animation-delay: 500ms;
 		animation-fill-mode: forwards;
@@ -67,7 +67,8 @@
 	.open-to-work-container {
 		padding: 0.375rem 1.5rem;
 		display: none;
-		margin-left: 10rem;
+		/* margin-left: 10rem; */
+		transform: translateX(5rem);
 		border-radius: 1.5rem;
 		border: 1px solid rgba(var(--rgb-off-white));
 	}

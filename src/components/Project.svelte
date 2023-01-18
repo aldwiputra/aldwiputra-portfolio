@@ -36,12 +36,12 @@
 	.project-container {
 		position: relative;
 		padding-block: 2rem;
-		border-bottom: 1px solid var(--color-purple-500);
+		border-bottom: 1px solid rgba(130, 119, 150, 0.1);
 		cursor: pointer;
 	}
 
 	.project-container:first-child {
-		border-top: 1px solid var(--color-purple-500);
+		border-top: 1px solid rgba(130, 119, 150, 0.1);
 		margin-top: 1rem;
 	}
 
