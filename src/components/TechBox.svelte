@@ -19,9 +19,9 @@
 		will-change: transform opacity;
 		opacity: 0;
 		animation-name: flyin;
-		animation-duration: 200ms;
+		animation-duration: 600ms;
 		animation-fill-mode: forwards;
-		animation-timing-function: ease-in;
+		animation-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
 	}
 
 	div:last-child {

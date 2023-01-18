@@ -176,10 +176,10 @@ nav > ul > *:not(:last-child) {
 	0% {
 		transform: translate3d(0, 150%, 0);
 	}
-
+	/* 
 	50% {
 		transform: translate3d(0, 75%, 0);
-	}
+	} */
 
 	100% {
 		opacity: 1;
