@@ -46,13 +46,12 @@
 <style>
 	header {
 		height: 4.5rem;
-		opacity: 1;
 		margin-block: 0.75rem;
-		/* animation-name: opacity; */
+		opacity: 0;
+		animation-name: flyin-down, opacity;
 		animation-duration: 500ms;
-		animation-delay: 500ms;
 		animation-fill-mode: forwards;
-		animation-timing-function: ease-in;
+		animation-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
 	}
 
 	.logo-container {
@@ -120,7 +119,10 @@
 	}
 
 	@keyframes flyin-down {
-		100% {
+		from {
+			transform: translate3d(0, -100%, 0);
+		}
+		to {
 			transform: translate3d(0, 0%, 0);
 		}
 	}
