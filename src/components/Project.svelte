@@ -56,10 +56,11 @@
 	h3 {
 		position: relative;
 		z-index: 0;
-		width: fit-content;
+		width: max-content;
 		font-size: clamp(1rem, 4vw, 2rem);
 		font-family: 'Atkinson Hyperlegible', sans-serif;
 		font-weight: 400;
+		white-space: nowrap;
 		text-transform: uppercase;
 		letter-spacing: 0.125rem;
 	}
@@ -87,7 +88,7 @@
 	.tech-stack-container {
 		flex-direction: column;
 		gap: 1rem;
-		width: clamp(3rem, 40vw, 12rem);
+		width: clamp(3rem, 30vw, 12rem);
 		min-width: 2.5rem;
 	}
 
@@ -98,9 +99,9 @@
 		overflow: hidden;
 	}
 
-	.img-container img {
+	/* .img-container img {
 		width: 100%;
-	}
+	} */
 
 	@media screen and (min-width: 45rem) {
 		.img-container {
