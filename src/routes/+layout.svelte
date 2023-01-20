@@ -18,6 +18,7 @@
 		inset: 0;
 		transform: scale(150%);
 		transform-origin: center;
+		opacity: 0.75;
 	}
 
 	@media screen and (min-width: 60rem) {
