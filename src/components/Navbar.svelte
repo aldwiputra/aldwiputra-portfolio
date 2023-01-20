@@ -46,7 +46,7 @@
 <style>
 	header {
 		height: 4.5rem;
-		margin-block: 0.75rem;
+		margin-block-end: 0.75rem;
 		opacity: 0;
 		animation-name: flyin-down, opacity;
 		animation-duration: 500ms;
