@@ -86,7 +86,6 @@ body {
 	background-color: var(--color-purple-700);
 	color: rgba(var(--rgb-off-white), var(--opacity, 1));
 	font-family: 'Sora', sans-serif;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 

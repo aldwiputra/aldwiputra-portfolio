@@ -45,7 +45,11 @@
 
 <style>
 	header {
-		height: 4.5rem;
+		padding-block: 2rem;
+		/* position: sticky;
+		position: -webkit-sticky;
+		top: 0; */
+		z-index: 999;
 		margin-block-end: 0.75rem;
 		opacity: 0;
 		animation-name: flyin-down, opacity;
