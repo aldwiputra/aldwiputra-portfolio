@@ -10,17 +10,14 @@
 
 	--rgb-black: 1, 1, 1;
 
-	--rgb-grey-800: 35, 35, 35;
-	--rgb-grey-600: 51, 51, 51; /* background */
-	--rgb-grey-400: 62, 61, 61; /* card background */
+	/* --rgb-grey-800: 35, 35, 35;
+	--rgb-grey-600: 51, 51, 51;
+	--rgb-grey-400: 62, 61, 61;
 	--rgb-grey-200: 97, 97, 97;
-	--rgb-grey-subtext: 138, 139, 141;
+	--rgb-grey-subtext: 138, 139, 141; */
 
 	--rgb-off-white: 226, 232, 240;
 	--rgb-white: 255, 255, 255;
-
-	--rgb-orange: 235, 91, 68;
-	--rgb-green: 75, 209, 53;
 
 	--rgb-black-github: 41, 41, 39;
 	--rgb-blue-linkedin: 19, 110, 150;
@@ -68,8 +65,9 @@ ol[role='list'] {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 2rem;
 }
 
 html {
