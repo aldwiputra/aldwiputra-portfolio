@@ -1,9 +1,16 @@
 <script>
 	import { fly } from 'svelte/transition';
+	import { circOut } from 'svelte/easing';
 	import SkillsSection from '../../components/SkillsSection.svelte';
+	import ContactSection from '../../components/ContactSection.svelte';
+
+	import { page } from '$app/stores';
+
+	let activepage = page;
+	console.log(activepage);
 </script>
 
-<svg viewBox="0 0 59.5 12.5" in:fly={{ y: 100 }}>
+<svg viewBox="0 0 59.5 12.5">
 	<style>
 		text {
 			font-weight: 400;
@@ -34,10 +41,15 @@
 		mask="url(#fade)"
 	/>
 
-	<text fill="url(#gr-simple" x="0" y="12">ABOUT</text>
+	<text
+		fill="url(#gr-simple"
+		x="0"
+		y="12"
+		in:fly={{ opacity: 0, y: 100, duration: 500, easing: circOut }}>ABOUT</text
+	>
 </svg>
 
-<p in:fly={{ opacity: 0, y: 100, delay: 200 }}>
+<p in:fly={{ opacity: 0, y: 100, delay: 500 }}>
 	Hi, there! I am <span class="blue">Aldi</span> 👨🏼, a
 	<span class="purple">Software Engineer </span>💻 based in Bandung, Indonesia. I started learning
 	software development out of curiosity and immediately realized this field is something I want to
@@ -46,6 +58,7 @@
 </p>
 
 <SkillsSection />
+<ContactSection />
 
 <style>
 	svg {

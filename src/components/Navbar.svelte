@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
 	import Greeting from './Greeting.svelte';
+	import { page } from '$app/stores';
 </script>
 
 <header class="flex" data-justi-align="sb-center">
@@ -17,9 +18,11 @@
 
 	<nav>
 		<ul class="flex">
-			<li><a href="#projects">projects</a></li>
-			<li><a href="#contact">contact</a></li>
-			<li><a href="/about">about</a></li>
+			{#if $page.url.pathname === '/'}
+				<li><a href="/about">about</a></li>
+			{:else}
+				<li><a href="/">home</a></li>
+			{/if}
 		</ul>
 	</nav>
 
@@ -53,7 +56,7 @@
 	.open-to-work-container {
 		padding: 0.375rem 1.5rem;
 		display: none;
-		margin-left: 10rem;
+		/* margin-left: 10rem; */
 		/* transform: translateX(5rem); */
 		border-radius: 1.5rem;
 		border: 1px solid rgba(var(--rgb-off-white));
