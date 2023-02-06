@@ -1,13 +1,8 @@
 <script>
-	import { fly } from 'svelte/transition';
+	import { fly, fade } from 'svelte/transition';
 	import { circOut } from 'svelte/easing';
 	import SkillsSection from '../../components/SkillsSection.svelte';
 	import ContactSection from '../../components/ContactSection.svelte';
-
-	import { page } from '$app/stores';
-
-	let activepage = page;
-	console.log(activepage);
 </script>
 
 <svg viewBox="0 0 59.5 12.5">
@@ -39,6 +34,7 @@
 		stroke-opacity="0.25"
 		stroke-width="0.034552845528455285"
 		mask="url(#fade)"
+		in:fade
 	/>
 
 	<text
@@ -57,7 +53,7 @@
 	skill itself, it has also instilled the <span class="blue">growth mindset</span> 📈 in me.
 </p>
 
-<SkillsSection />
+<!-- <SkillsSection /> -->
 <ContactSection />
 
 <style>
