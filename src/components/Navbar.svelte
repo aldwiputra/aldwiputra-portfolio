@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Greeting from './Greeting.svelte';
+	import { fly } from 'svelte/transition';
 	import { page } from '$app/stores';
 </script>
 
@@ -19,9 +20,13 @@
 	<nav>
 		<ul class="flex">
 			{#if $page.url.pathname === '/'}
-				<li><a href="/about">about</a></li>
+				<li in:fly={{ y: -20, delay: 300 }}>
+					<a href="/about">about</a>
+				</li>
 			{:else}
-				<li><a href="/">home</a></li>
+				<li in:fly={{ y: -20, delay: 300 }}>
+					<a href="/">home</a>
+				</li>
 			{/if}
 		</ul>
 	</nav>
@@ -32,9 +37,6 @@
 <style>
 	header {
 		padding-block: 2rem;
-		/* position: sticky;
-		position: -webkit-sticky;
-		top: 0; */
 		z-index: 999;
 		margin-block-end: 0.75rem;
 		opacity: 0;
@@ -56,8 +58,6 @@
 	.open-to-work-container {
 		padding: 0.375rem 1.5rem;
 		display: none;
-		/* margin-left: 10rem; */
-		/* transform: translateX(5rem); */
 		border-radius: 1.5rem;
 		border: 1px solid rgba(var(--rgb-off-white));
 	}
