@@ -16,6 +16,7 @@
 	img {
 		position: absolute;
 		inset: 0;
+		z-index: -2;
 		transform: scale(150%);
 		transform-origin: center;
 		opacity: 0.75;
