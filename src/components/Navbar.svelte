@@ -55,9 +55,26 @@
 		height: 100%;
 	}
 
+	li {
+		position: relative;
+	}
+
+	li::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		z-index: 1;
+		width: 100%;
+		background-color: rgba(var(--rgb-off-white));
+	}
+
 	.open-to-work-container {
 		padding: 0.375rem 1.5rem;
 		display: none;
+		transform: translateX(-20%);
 		border-radius: 1.5rem;
 		border: 1px solid rgba(var(--rgb-off-white));
 	}
