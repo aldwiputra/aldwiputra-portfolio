@@ -8,6 +8,7 @@
 <svg viewBox="0 0 59.5 12.5">
 	<style>
 		text {
+			font-family: 'Sora', sans-serif;
 			font-weight: 400;
 			letter-spacing: 0.25px;
 		}
@@ -34,7 +35,7 @@
 		stroke-opacity="0.25"
 		stroke-width="0.034552845528455285"
 		mask="url(#fade)"
-		in:fade
+		in:fade={{ delay: 500, duration: 500 }}
 	/>
 
 	<text
@@ -53,7 +54,7 @@
 	skill itself, it has also instilled the <span class="blue">growth mindset</span> 📈 in me.
 </p>
 
-<!-- <SkillsSection /> -->
+<SkillsSection />
 <ContactSection />
 
 <style>
