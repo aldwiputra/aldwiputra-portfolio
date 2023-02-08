@@ -1,10 +1,7 @@
 <script lang="ts">
 	import Container from '../components/Container.svelte';
 	import Navbar from '../components/Navbar.svelte';
-	import { page } from '$app/stores';
 	import '../global.css';
-
-	export const prerender = true;
 </script>
 
 <Container>
