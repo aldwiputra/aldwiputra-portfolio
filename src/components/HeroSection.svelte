@@ -61,9 +61,9 @@
 		line-height: 1.05;
 		opacity: 0;
 		animation-name: opacity;
-		animation-duration: 1000ms;
+		animation-duration: 500ms;
 		animation-fill-mode: forwards;
-		animation-timing-function: ease-in;
+		animation-timing-function: linear;
 	}
 
 	.section-container {
