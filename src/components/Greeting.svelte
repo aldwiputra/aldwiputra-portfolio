@@ -23,7 +23,7 @@
 		Good {timeOfDay}
 	</p>
 	<p class="time">
-		{formattedTime}
+		{formattedTime}!
 	</p>
 </div>
 
