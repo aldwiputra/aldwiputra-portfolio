@@ -23,7 +23,7 @@
 		<ContactCard
 			title="LinkedIn"
 			name="Aldiansyah Dwi Putra"
-			link="https://www.linkedin.com/in/aldiansyah-dwi-putra-9054a1118/"
+			link="https://www.linkedin.com/in/aldwiputra/"
 			icon="/linkedin.svg"
 		/>
 		<ContactCard
