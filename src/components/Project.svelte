@@ -14,9 +14,13 @@
   <h3>{title}</h3>
   <div class="gallery-container flex">
     <div class="galleries shadow flex texturize">
-      <img src={imgPaths[0]} alt={turnPathIntoAltText(imgPaths[0])} />
-      <img src={imgPaths[1]} alt={turnPathIntoAltText(imgPaths[1])} />
-      <img src={imgPaths[2]} alt={turnPathIntoAltText(imgPaths[2])} />
+      {#if typeof imgPaths === 'string'}
+        <img src={imgPaths} alt={turnPathIntoAltText(imgPaths)} />
+      {:else}
+        <img src={imgPaths[0]} alt={turnPathIntoAltText(imgPaths[0])} />
+        <img src={imgPaths[1]} alt={turnPathIntoAltText(imgPaths[1])} />
+        <img src={imgPaths[2]} alt={turnPathIntoAltText(imgPaths[2])} />
+      {/if}
     </div>
     <div class="tech-stack-container flex">
       <div class="img-container shadow texturize">
@@ -55,6 +59,7 @@
 
   h3 {
     position: relative;
+    color: var(--color-purple-subtext);
     z-index: 0;
     width: max-content;
     font-size: clamp(1rem, 4vw, 2rem);
@@ -78,7 +83,7 @@
 
   .galleries {
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 2rem;
     justify-content: center;
     align-items: center;
     background-color: var(--color-purple-600);
@@ -86,9 +91,11 @@
   }
 
   .tech-stack-container {
+    flex-shrink: 0;
     flex-direction: column;
     gap: 1rem;
-    width: clamp(3rem, 30vw, 12rem);
+    /* width: clamp(3rem, 30vw, 12rem); */
+    width: 13%;
     min-width: 2.5rem;
   }
 

@@ -15,6 +15,24 @@
 
   const projectsData: Project[] = [
     {
+      title: 'POTA Brand',
+      imgPaths: '/pota-hero.png',
+      techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
+      type: 'web'
+    },
+    {
+      title: 'Cliqengo ',
+      imgPaths: '/cliqengo-homepage.png',
+      techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
+      type: 'web'
+    },
+    {
+      title: 'Bingify',
+      imgPaths: '/bingify-hero.png',
+      techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
+      type: 'web'
+    },
+    {
       title: 'Expenditura',
       imgPaths: ['/expenditura-onboard.webp', '/expenditura-home.webp', '/expenditura-dialog.webp'],
       techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
