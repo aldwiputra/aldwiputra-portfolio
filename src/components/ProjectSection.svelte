@@ -11,7 +11,7 @@
 
   type Tab = 'all' | 'web' | 'mobile';
 
-  let activeTab: Tab = 'mobile';
+  let activeTab: Tab = 'all';
 
   const projectsData: Project[] = [
     {
@@ -41,14 +41,18 @@
       return activeTab === 'mobile' ? project.type === 'mobile' : project.type === 'web';
     }
   });
+
+  function handleChange(event: CustomEvent<{ state: Tab }>) {
+    activeTab = event.detail.state;
+  }
 </script>
 
 <section id="projects">
   <h2>Projects <span>.</span></h2>
   <div class="tab-buttons-container flex">
-    <TabButton path="all-icon.svg" text="All" />
-    <TabButton path="webdev-icon.svg" text="Web" />
-    <TabButton path="mobile-icon.svg" text="Mobile" />
+    <TabButton {activeTab} path="all-icon.svg" text="all" on:change={handleChange} />
+    <TabButton {activeTab} path="webdev-icon.svg" text="web" on:change={handleChange} />
+    <TabButton {activeTab} path="mobile-icon.svg" text="mobile" on:change={handleChange} />
   </div>
   <div class="projects-container">
     {#each filteredProjects as project}
