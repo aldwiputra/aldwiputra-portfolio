@@ -1,5 +1,8 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
+  import All from './icons/All.svelte';
+  import Mobile from './icons/Mobile.svelte';
+  import Web from './icons/Web.svelte';
 
   type Tab = 'all' | 'web' | 'mobile';
 
@@ -19,11 +22,17 @@
   on:click={setActiveTab}
   class="flex"
   data-justi-align="sb-center"
-  style={text.toLowerCase() !== activeTab
+  style={text !== activeTab
     ? 'border: 1px solid var(--color-purple-subtext); color: var(--color-purple-subtext) ;'
     : 'border: 1px solid rgba(var(--rgb-off-white));color: rgba(var(--rgb-off-white));'}
 >
-  <img src={path} alt={altText} />
+  {#if text === 'all'}
+    <All color={text === activeTab ? '#E2E8F0' : '#827796'} />
+  {:else if text === 'mobile'}
+    <Mobile color={text === activeTab ? '#E2E8F0' : '#827796'} />
+  {:else}
+    <Web color={text === activeTab ? '#E2E8F0' : '#827796'} />
+  {/if}
   <p>
     {text[0].toUpperCase() + text.slice(1)}
   </p>
@@ -37,11 +46,6 @@
     border-radius: 1rem;
     border: 1px solid rgba(var(--rgb-off-white));
     padding: 0.25rem 1rem;
-  }
-
-  img {
-    height: 1em;
-    margin-inline-end: 0.5rem;
   }
 
   p {
