@@ -2,7 +2,7 @@
   import TechBox from './TechBox.svelte';
 
   export let title: string;
-  export let imgPaths: string[];
+  export let imgPaths: string[] | string;
   export let techImgPaths: string[];
 
   function turnPathIntoAltText(path: string) {
