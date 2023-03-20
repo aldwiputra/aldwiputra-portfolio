@@ -21,7 +21,7 @@
       type: 'web'
     },
     {
-      title: 'Cliqengo ',
+      title: 'Cliqengo',
       imgPaths: '/cliqengo-homepage.png',
       techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
       type: 'web'
