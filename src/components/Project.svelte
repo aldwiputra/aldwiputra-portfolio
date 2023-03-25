@@ -44,6 +44,10 @@
     cursor: pointer;
   }
 
+  .project-container:hover {
+    background-color: rgba(130, 119, 150, 0.1);
+  }
+
   .project-container:first-child {
     border-top: 1px solid rgba(130, 119, 150, 0.1);
     margin-top: 1rem;
@@ -55,6 +59,7 @@
     -moz-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    transform: translateX(2rem);
   }
 
   h3 {
@@ -68,6 +73,7 @@
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 0.125rem;
+    transition: all 200ms ease;
   }
 
   img {
