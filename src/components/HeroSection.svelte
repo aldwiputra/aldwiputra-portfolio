@@ -121,6 +121,10 @@
   }
 
   @media screen and (min-width: 60rem) {
+    section {
+      padding-block: 5rem;
+    }
+
     section::before {
       transform: rotate(0deg);
     }

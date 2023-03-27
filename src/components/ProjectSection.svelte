@@ -17,19 +17,19 @@
     {
       title: 'POTA Brand',
       imgPaths: '/pota-hero.png',
-      techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
+      techImgPaths: ['/html.svg', '/css.svg', '/javascript.svg'],
       type: 'web'
     },
     {
       title: 'Cliqengo',
       imgPaths: '/cliqengo-homepage.png',
-      techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
+      techImgPaths: ['/html.svg', '/css.svg', '/javascript.svg'],
       type: 'web'
     },
     {
       title: 'Bingify',
       imgPaths: '/bingify-hero.png',
-      techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
+      techImgPaths: ['/svelte.svg', '/css.svg', '/typescript.svg'],
       type: 'web'
     },
     {
