@@ -4,13 +4,14 @@
   export let title: string;
   export let imgPaths: string[] | string;
   export let techImgPaths: string[];
+  export let url: string;
 
   function turnPathIntoAltText(path: string) {
     return path.replace('-', ' ').slice(0, -4);
   }
 </script>
 
-<div class="project-container">
+<a href={url} target="_blank" rel="noreferrer" class="project-container">
   <h3>{title}</h3>
   <div class="gallery-container flex">
     <div class="galleries shadow flex texturize">
@@ -34,10 +35,11 @@
       </div>
     </div>
   </div>
-</div>
+</a>
 
 <style>
   .project-container {
+    display: block;
     position: relative;
     padding-block: 2rem;
     border-bottom: 1px solid rgba(130, 119, 150, 0.1);

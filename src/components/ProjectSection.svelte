@@ -6,6 +6,7 @@
     title: string;
     imgPaths: string[] | string;
     techImgPaths: string[];
+    url: string;
     type: 'mobile' | 'web';
   };
 
@@ -18,36 +19,42 @@
       title: 'POTA Brand',
       imgPaths: '/pota-hero.png',
       techImgPaths: ['/html.svg', '/css.svg', '/javascript.svg'],
+      url: 'https://potabrand.aldwiputra.site',
       type: 'web'
     },
     {
       title: 'Cliqengo',
       imgPaths: '/cliqengo-homepage.png',
       techImgPaths: ['/html.svg', '/css.svg', '/javascript.svg'],
+      url: 'https://cliqengo.aldwiputra.site',
       type: 'web'
     },
     {
       title: 'Bingify',
       imgPaths: '/bingify-hero.png',
       techImgPaths: ['/svelte.svg', '/css.svg', '/typescript.svg'],
+      url: 'https://bingify.aldwiputra.site',
       type: 'web'
     },
     {
       title: 'Expenditura',
       imgPaths: ['/expenditura-onboard.webp', '/expenditura-home.webp', '/expenditura-dialog.webp'],
       techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/mysql-icon.svg'],
+      url: 'https://github.com/DhewaGunawan/MoneyTrackerBinarPlatinum',
       type: 'mobile'
     },
     {
       title: 'Watchflix',
       imgPaths: ['/watchflix-home.webp', '/watchflix-detail.webp', '/watchflix-chat.webp'],
       techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/firebase-colored.svg'],
+      url: 'https://github.com/DhewaGunawan/BinarWatchflix',
       type: 'mobile'
     },
     {
       title: 'RPS Game',
       imgPaths: ['/rps-splash.webp', '/rps-home.webp', '/rps-option.webp'],
       techImgPaths: ['/android-icon.svg', '/kotlin-icon.svg', '/db-icon.svg'],
+      url: 'https://github.com/aldwiputra/rockpaperscissor-gui',
       type: 'mobile'
     }
   ];
@@ -78,6 +85,7 @@
         title={project.title}
         imgPaths={project.imgPaths}
         techImgPaths={project.techImgPaths}
+        url={project.url}
       />
     {/each}
   </div>
