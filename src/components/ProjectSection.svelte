@@ -23,6 +23,13 @@
       type: 'web'
     },
     {
+      title: 'Qontax',
+      imgPaths: '/qontax-banner.png',
+      techImgPaths: ['/react-icon.svg', '/css.svg', '/typescript.svg'],
+      url: 'https://qontax.vercel.app',
+      type: 'web'
+    },
+    {
       title: 'POTA Brand',
       imgPaths: '/pota-hero.png',
       techImgPaths: ['/html.svg', '/css.svg', '/javascript.svg'],
