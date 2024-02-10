@@ -33,21 +33,21 @@
       title: 'POTA Brand',
       imgPaths: '/pota-hero.png',
       techImgPaths: ['/html.svg', '/css.svg', '/javascript.svg'],
-      url: 'https://potabrand.aldwiputra.site',
+      url: 'https://potabrand.aldwiputra.com',
       type: 'web'
     },
     {
       title: 'Cliqengo',
       imgPaths: '/cliqengo-homepage.png',
       techImgPaths: ['/html.svg', '/css.svg', '/javascript.svg'],
-      url: 'https://cliqengo.aldwiputra.site',
+      url: 'https://cliqengo.aldwiputra.com',
       type: 'web'
     },
     {
       title: 'Bingify',
       imgPaths: '/bingify-hero.png',
       techImgPaths: ['/svelte.svg', '/css.svg', '/typescript.svg'],
-      url: 'https://bingify.aldwiputra.site',
+      url: 'https://bingify.aldwiputra.com',
       type: 'web'
     },
     {
